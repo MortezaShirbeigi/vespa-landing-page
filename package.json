@@ -1,0 +1,28 @@
+{
+  "name": "my-bootstrap",
+  "version": "1.0.0",
+  "description": "modified bootstrap for vespa landing page",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch assets/styles/main.scss:assets/styles/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MortezaShirbeigi/vespa-landing-page.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "scss",
+    "bootstrap"
+  ],
+  "author": "Morteza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MortezaShirbeigi/vespa-landing-page/issues"
+  },
+  "homepage": "https://github.com/MortezaShirbeigi/vespa-landing-page#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}
