@@ -2,7 +2,7 @@ $theme-colors: (
   "primary": #1e65b7,
   "secondary": #134a89,
   "light": #fafafa,
-  "dark": #000000,
+  "dark": #323232,
 );
 
 @import "../../node_modules/bootstrap/scss/functions";
@@ -16,3 +16,33 @@ $theme-colors: (
 @import "../../node_modules/bootstrap/scss/type";
 @import "../../node_modules/bootstrap/scss/forms";
 @import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "./rtl-bootstrap";
+@import "./font-face";
+
+// Start Main Styles
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Vazir-FD";
+  font-weight: normal;
+}
+a {
+  text-decoration: none !important;
+}
+// End Main Styles
+
+// Start Header Styles
+header {
+  background-color: map-get($theme-colors, light);
+  font-weight: bold;
+  .nav-link {
+    color: map-get($theme-colors, dark) !important;
+    font-size: 1.1rem;
+    &:hover {
+      color: map-get($theme-colors, primary) !important;
+    }
+  }
+}
+// End Header Styles
