@@ -7,6 +7,40 @@
     <title>لندینگ پیج وسپا | Vespa</title>
   </head>
   <body>
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header align-items-center">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              وسپا کم مصرف و اقتصادی
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/GoJ5JHC3JwY"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header id="home">
       <div class="container">
         <nav class="row navbar navbar-expand-lg navbar-light py-4">
@@ -49,7 +83,12 @@
                 alt=""
               />
               <div class="video-btn">
-                <a href="#">
+                <a
+                  id="video-btn"
+                  data-toggle="modal"
+                  data-target="#staticBackdrop"
+                  href="#"
+                >
                   <svg
                     width="86"
                     height="86"
