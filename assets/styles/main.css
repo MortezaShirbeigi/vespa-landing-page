@@ -7421,14 +7421,16 @@ a {
   color: #ffffff;
 }
 
-.my-btn-fill {
+.my__btn--fill {
+  background-color: #1e65b7;
   border-radius: 30rem;
   padding: 0.5rem 1.3rem;
   color: #ffffff;
   font-weight: bold;
 }
 
-.my-btn-fill:hover {
+.my__btn--fill:hover {
+  background-color: #134a89;
   color: #ffffff;
 }
 
@@ -7459,7 +7461,7 @@ header .nav-link:hover {
   background-image: url("../images/footer-image.png");
   background-position: bottom;
   background-repeat: no-repeat;
-  margin-bottom: -1.25rem;
+  margin-bottom: -1.3rem;
 }
 .products .section-title {
   color: #1e65b7 !important;
@@ -7508,6 +7510,30 @@ header .nav-link:hover {
 }
 .products .product .bg__card .bg__card--item .bg__card--item--title p {
   font-size: 1.6rem;
+}
+
+footer {
+  background-color: #fafafa;
+  padding: 6rem 0 2rem 0;
+  position: relative;
+}
+footer .footer-head {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+footer .footer-content {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+footer .footer-content a:hover {
+  color: #1e65b7 !important;
+}
+footer .my-licence {
+  color: #d2d2d2;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

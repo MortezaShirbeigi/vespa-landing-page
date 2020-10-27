@@ -44,15 +44,15 @@ a {
   background-color: map-get($theme-colors, primary);
   color: map-get($theme-colors, pure-white);
 }
-.my-btn-fill {
-  background-color: map-get($colors, primary);
+.my__btn--fill {
+  background-color: map-get($theme-colors, primary);
   border-radius: 30rem;
   padding: 0.5rem 1.3rem;
   color: map-get($theme-colors, pure-white);
   font-weight: bold;
 }
-.my-btn-fill:hover {
-  background-color: map-get($colors, primary);
+.my__btn--fill:hover {
+  background-color: map-get($theme-colors, secondary);
   color: map-get($theme-colors, pure-white);
 }
 // End Main Styles
@@ -89,7 +89,7 @@ header {
   background-image: url("../images/footer-image.png");
   background-position: bottom;
   background-repeat: no-repeat;
-  margin-bottom: -1.25rem;
+  margin-bottom: -1.3rem;
   .section-title {
     color: map-get($theme-colors, primary) !important;
     font-size: 1.8rem;
@@ -144,6 +144,34 @@ header {
         }
       }
     }
+  }
+}
+// End Product Section
+
+// Start Footer Section
+footer {
+  background-color: map-get($theme-colors, light);
+  padding: 6rem 0 2rem 0;
+  position: relative;
+  .footer-head {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+  }
+  .footer-content {
+    font-size: 1.1rem;
+    font-weight: 500;
+    a {
+      &:hover {
+        color: map-get($theme-colors, primary) !important;
+      }
+    }
+  }
+  .my-licence {
+    color: #d2d2d2;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
   }
 }
 // End Product Section
