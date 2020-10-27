@@ -3,6 +3,7 @@ $theme-colors: (
   "secondary": #134a89,
   "light": #fafafa,
   "dark": #323232,
+  "pure-white": #ffffff,
 );
 
 @import "../../node_modules/bootstrap/scss/functions";
@@ -31,6 +32,28 @@ body {
 a {
   text-decoration: none !important;
 }
+.my-btn-bordered {
+  border: 0.2rem solid map-get($theme-colors, primary);
+  border-radius: 30rem;
+  padding: 0.5rem 1.3rem;
+  color: map-get($theme-colors, primary);
+  font-weight: bold;
+}
+.my-btn-bordered:hover {
+  background-color: map-get($theme-colors, primary);
+  color: map-get($theme-colors, pure-white);
+}
+.my-btn-fill {
+  background-color: map-get($colors, primary);
+  border-radius: 30rem;
+  padding: 0.5rem 1.3rem;
+  color: map-get($theme-colors, pure-white);
+  font-weight: bold;
+}
+.my-btn-fill:hover {
+  background-color: map-get($colors, primary);
+  color: map-get($theme-colors, pure-white);
+}
 // End Main Styles
 
 // Start Header Styles
@@ -46,3 +69,15 @@ header {
   }
 }
 // End Header Styles
+
+// Start Top Section
+.top__section {
+  background-color: map-get($theme-colors, light);
+  .top__section--title {
+    font-size: 5rem !important;
+  }
+  .top__section--subtitle {
+    font-size: 2rem !important;
+  }
+}
+// End Top Section
