@@ -1,3 +1,4 @@
+// Start change bootstrap colors
 $theme-colors: (
   "primary": #1e65b7,
   "secondary": #134a89,
@@ -6,7 +7,9 @@ $theme-colors: (
   "dark": #323232,
   "pure-white": #ffffff,
 );
+// End change bootstrap colors
 
+// Start import styles from other files
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
@@ -21,8 +24,13 @@ $theme-colors: (
 @import "../../node_modules/bootstrap/scss/transitions";
 @import "./rtl-bootstrap";
 @import "./font-face";
+@import "./animations";
+// End import styles from other files
 
 // Start Main Styles
+html {
+  scroll-behavior: smooth;
+}
 body {
   box-sizing: border-box;
   padding: 0;
@@ -74,6 +82,21 @@ header {
 // Start Top Section
 .top__section {
   background-color: map-get($theme-colors, light);
+  position: relative;
+  .video-btn {
+    animation: pulse 1s infinite alternate;
+    position: absolute;
+    bottom: -0.9rem;
+    left: 0.4rem;
+  }
+  #white-round {
+    animation: playBtn 2s infinite;
+    transform-origin: center;
+  }
+  #blue-round {
+    transform: scale(1.3);
+    transform-origin: center;
+  }
   .top__section--title {
     font-size: 5rem !important;
   }
